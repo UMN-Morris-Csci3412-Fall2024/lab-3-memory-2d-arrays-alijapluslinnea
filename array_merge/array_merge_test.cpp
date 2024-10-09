@@ -97,7 +97,7 @@ TEST(ArrayMerge, Handle_different_sizes) {
     for (i=0; i<num_arrays; ++i) {
       free(a[i]);
   }
-  free(a);
+  // free(a);
 }
 
 TEST(ArrayMerge, Handle_different_sizes_reversed) {
@@ -123,7 +123,7 @@ TEST(ArrayMerge, Handle_different_sizes_reversed) {
     for (i=0; i<num_arrays; ++i) {
     free(a[i]);
   }
-  free(a);
+  // free(a);
 }
 
 int main(int argc, char* argv[]) {
