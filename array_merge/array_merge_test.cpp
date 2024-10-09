@@ -94,10 +94,6 @@ TEST(ArrayMerge, Handle_different_sizes) {
   result = array_merge(num_arrays, sizes, a);
   arrays_match(11, result, expected);
   free(result);
-
-  for (int i = 0; i < num_arrays; ++i) {
-      free(a[i]); // Free each sub-array
-  }
   free(a);
 }
 
@@ -121,9 +117,6 @@ TEST(ArrayMerge, Handle_different_sizes_reversed) {
   arrays_match(11, result, expected);
   free(result);
 
-  for (int i = 0; i < num_arrays; ++i) {
-      free(a[i]); // Free each sub-array
-  }
   free(a);
 }
 
